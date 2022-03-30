@@ -13,10 +13,23 @@ void printNumbacktracking(ll count){
   printNumbacktracking(count-1);
   cout<< count << endl;
 }
+
+void printNumbacktrackingReverse(ll count){
+  if(count == count+1){
+    return;
+  }
+  printNumbacktracking(count+1);
+  cout<< count << endl;
+}
+
 int main(){
   ll n;
   cin >> n;
   printNumbacktracking(n);
 
+  cout << "In reverse order" << endl;
+  cout << endl;
+  
+  printNumbacktrackingReverse(n);
   return 0;
 }
