@@ -6,7 +6,7 @@ void printNum(ll count,ll i){
   if(count == 0){
     return;
   }
-  cout<< i << endl;
+  cout<< count << endl;
   count--;
   i++;
   printNum(count,i);
